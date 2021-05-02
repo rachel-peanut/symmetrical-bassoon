@@ -27,7 +27,7 @@ for stock in RHI_rank:
         try:
             analysis = get_analysis(yf_json["quoteSummary"]["result"][0]["recommendationTrend"]["trend"][0])
             stock_cap = int(stock_cap_json["quoteSummary"]["result"][0]["defaultKeyStatistics"]["enterpriseValue"]["raw"])
-            if stock_cap < 1000000000 and stock_cap > 1 and analysis != None:
+            if stock_cap < 1000000000 and stock_cap > 1 and analysis != None and analysis < 3:
                 stock_list.append(stock["ticker"])
 
 
