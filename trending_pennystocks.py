@@ -1,8 +1,8 @@
 import requests
 
 # I got a free token and secret key from the developer section in sentimentinvestor.com
-token = "hidden my token"
-secret_key = "hidden my secret key"
+token = "myadsHcAoeErGuDcSz7A"
+secret_key = "m310618960941541"
 RHI_rank = requests.get("https://sentimentinvestor.com/api/v3/sort?limit=100&metric=RHI&token={0}&key={1}".format(token, secret_key)).json()
 def get_analysis(recommendation):
 
